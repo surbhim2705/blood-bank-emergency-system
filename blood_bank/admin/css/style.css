@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/****************************
+*   FOR RESPONSIVENESS      *
+****************************/
+::selection {
+  background: #e63946;
+  color: #fff;
+}
+::-moz-selection {
+  background: #e63946;
+  color: #fff;
+}
+html {
+  font-size: 14px;
+}
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/****************************
+*      BODY DEFAULTS        *
+****************************/
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  background-color: #f4f6f9;
+  color: #455a64;
+}
+a {
+  color: #e63946;
+  transition: all 0.3s;
+}
+a:hover {
+  text-decoration: none;
+  color: #b0101d;
+}
+
+/****************************
+*      Buttons        *
+****************************/
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.btn i {
+  position: relative;
+  top: -1px;
+}
+.btn-primary, .btn-brand {
+  background: linear-gradient(45deg, #1d3557, #162a45);
+  border: none;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(29, 53, 87, 0.2);
+}
+.btn-primary:hover, .btn-brand:hover {
+  background: linear-gradient(45deg, #162a45, #0d1b2a);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(29, 53, 87, 0.3);
+}
+.btn-danger {
+  background: linear-gradient(45deg, #e63946, #b0101d);
+  border: none;
+}
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(230, 57, 70, 0.3);
+}
+
+/****************************
+*      Background Colors        *
+****************************/
+.bk-primary {
+  background: #1d3557;
+}
+.bk-success {
+  background: #2a9d8f;
+}
+.bk-warning {
+  background: #e9c46a;
+}
+.bk-danger {
+  background: #e63946;
+}
+.bk-info {
+  background: #457b9d;
+}
+.bk-light {
+  background: #fff;
+}
+.bk-dark {
+  background: #0d1b2a;
+}
+
+/* Panels */
+.panel {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  background: #fff;
+  overflow: hidden;
+}
+.panel-heading {
+  background: #fff !important;
+  border-bottom: 1px solid #edf0f5 !important;
+  font-weight: 700;
+  color: #1d3557;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+}
+.panel-body {
+  padding: 20px;
+}
+
+/****************************
+*      Text size color        *
+****************************/
+.text-bold {
+  font-weight: 700;
+}
+.text-light {
+  color: #fff !important;
+}
+.text-danger {
+  color: #e63946 !important;
+}
+.page-title {
+  color: #1d3557;
+  font-weight: 800;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #edf0f5;
+  font-size: 1.8rem;
+}
+
+/****************************
+*      Header (Brand)       *
+****************************/
+.brand {
+  background: #1d3557;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  height: 60px;
+}
+.brand .logo {
+  box-sizing: border-box;
+  padding: 18px 20px;
+  float: left;
+  display: block;
+  width: 250px;
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+}
+.brand .menu-btn {
+  float: right;
+  background: #e63946;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  padding: 20px 20px;
+}
+.brand .ts-profile-nav {
+  float: right;
+  margin: 0;
+}
+.brand .ts-profile-nav li {
+  float: left;
+  position: relative;
+  list-style: none;
+}
+.brand .ts-profile-nav li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.brand .ts-profile-nav li ul {
+  visibility: hidden;
+  opacity: 0;
+  right: 0;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 0 0 8px 8px;
+  transition: all 0.3s;
+  padding: 0;
+}
+.brand .ts-profile-nav li ul li {
+  float: none;
+  width: 180px;
+}
+.brand .ts-profile-nav li ul li a {
+  padding: 12px 20px;
+  background: transparent;
+  color: #1d3557;
+  border-bottom: 1px solid #f4f6f9;
+}
+.brand .ts-profile-nav li ul li a:hover {
+  background: #f4f6f9;
+  color: #e63946;
+}
+.brand .ts-profile-nav .ts-account:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+.brand .ts-profile-nav .ts-account .ts-avatar {
+  border-radius: 50%;
+  height: 30px;
+  margin: -5px 10px -5px 0;
+}
+
+/****************************
+*      Sidebar              *
+****************************/
+.ts-sidebar {
+  background: #0d1b2a;
+  position: fixed;
+  z-index: 2;
+  width: 250px;
+  bottom: 0;
+  top: 60px;
+  overflow-y: auto;
+  box-shadow: 2px 0 15px rgba(0,0,0,0.05);
+}
+.ts-sidebar-menu {
+  padding: 0;
+  margin: 0;
+}
+.ts-sidebar-menu .ts-label {
+  color: rgba(255,255,255,0.4);
+  font-weight: 700;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  list-style: none;
+}
+.ts-sidebar-menu a {
+  display: block;
+  text-decoration: none;
+  padding: 15px 20px;
+  color: #a8b2c1;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.ts-sidebar-menu li {
+  position: relative;
+  list-style: none;
+}
+.ts-sidebar-menu li i {
+  color: #e63946;
+  margin-right: 15px;
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+.ts-sidebar-menu a:hover, .ts-sidebar-menu .open > a {
+  color: #fff;
+  background: #162a45;
+}
+.ts-sidebar-menu li ul {
+  display: block;
+  background: #0a1520;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+.menu-open,
+.ts-sidebar-menu .open > ul {
+  max-height: 1000px;
+}
+.ts-sidebar-menu li ul a {
+  padding-left: 55px;
+  font-size: 13px;
+}
+.more {
+  float: right;
+  cursor: pointer;
+  padding-top: 2px;
+}
+
+/****************************
+*      Main Content         *
+****************************/
+.ts-main-content .content-wrapper {
+  padding-top: 25px;
+  margin-top: 60px;
+  margin-left: 250px;
+  padding-bottom: 40px;
+}
+
+/* Stat Panels on Dashboard */
+.stat-panel {
+  padding: 10px;
+}
+.stat-panel-number {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.stat-panel-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.block-anchor {
+  background: rgba(0,0,0,0.1);
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  transition: background 0.3s;
+}
+.block-anchor:hover {
+  background: rgba(0,0,0,0.2);
+  color: white;
+}
+
+/* Forms */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #edf0f5;
+  box-shadow: none;
+  padding: 10px 15px;
+  height: auto;
+  font-size: 0.95rem;
+}
+.form-control:focus {
+  border-color: #1d3557;
+  box-shadow: 0 0 0 3px rgba(29, 53, 87, 0.1);
+}
+
+/* Tables */
+table.dataTable {
+  border-collapse: collapse !important;
+}
+.table-bordered > thead > tr > th {
+  border-bottom-width: 2px;
+  background: #f8f9fa;
+  color: #1d3557;
+  font-weight: 700;
+  padding: 15px 10px;
+}
+.table > tbody > tr > td {
+  padding: 15px 10px;
+  vertical-align: middle;
+}
